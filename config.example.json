@@ -1,3 +1,8 @@
 {
-	"apikey": ""
+	"apikey": "",
+	"symbol": [
+		"btc",
+		"eth",
+		"xrp"
+	]
 }
