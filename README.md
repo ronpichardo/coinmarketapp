@@ -6,7 +6,8 @@ App for checking current prices on the Cryptocurrency market.
 CoinMarketCap is a site that gives you free access to current and historic data for Bitcoin and thousands of altcoins.
 
 This program is intended for monitoring your Crytocurrency of choice with the future implementation of being alerted of 5%-10% changes in price.
-Alerting will be via a Discord Webhook, information and instructions can be found here: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+Alerting will be via a Discord Webhook, information and instructions can be found here: 
+https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
 
 ## Requirements
 Python Version: Python3.6
@@ -16,6 +17,7 @@ Prior to using this program, an API-Key provided by Coinmarketcap is required, y
 
 ## Installation
 Required Libraries - Requests
+
 Mac/Linux
 ```shell
 $ git clone https://github.com/ronpichardo/coinmarketapp.git
