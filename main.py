@@ -32,13 +32,16 @@ data = {
 try:
 	res = s.get(url, params=data)
 	data = res.json()['data']
-	for crypto in data:
-		rank = crypto['id']
-		name = crypto['name']
-		symbol = crypto['symbol']
-		price = crypto['quote']['USD']['price']
-		formattedPrice = format(price, '.3f')
-		print(f'{rank} : {name}({symbol}) - {formattedPrice}')
+
+	for coin in config['symbol']:
+		for crypto in data:
+			rank = crypto['id']
+			name = crypto['name']
+			symbol = crypto['symbol'].lower()
+			price = crypto['quote']['USD']['price']
+			formattedPrice = format(price, '.3f')
+			if symbol == coin:
+				print(f'{rank} : {name}({symbol}) - {formattedPrice}')
 
 except (ConnectionError, Timeout, TooManyRedirects) as e:
 	print('Exception: %s' % e)
